@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from PIL import Image
 
 class EmployeeForm:
     # Define Constants and Keys
@@ -22,6 +23,7 @@ class EmployeeForm:
 
 
     def render(self):
+        st.image('documents/img/triark_logo.png')
         st.header("Triark IT Ticket Form")
         st.text("To report an issue, fill out the IT ticket form below. Only submit once per request. \nTo submit multiple requests, refresh page.")
 
